@@ -1,0 +1,28 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../mixin/our-team-mixins";
+
+.view-id-our_team {
+  @include block-our-team;
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .views-row {
+      padding: 0;
+      margin: 30px 10px;
+      .views-field-title {
+        span {
+          a {
+            color: $dark-gray;
+          }
+        }
+      }
+    }
+  }
+  @include pager;
+  .pager {
+    margin-top: 50px;
+  }
+}
+
+@import "our-team-media";

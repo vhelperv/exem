@@ -1,0 +1,8 @@
+global:
+  css:
+    theme:
+      "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap": { external: true }
+      "https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;500;600;700&display=swap": { external: true }
+      css/style.css: {}
+  js:
+      js/main.js: {}

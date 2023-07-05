@@ -1,0 +1,188 @@
+{
+    "name": "drupal/recommended-project",
+    "description": "Project template for Drupal 8 projects with a relocated document root",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "kenwheeler/slick",
+                "version": "1.8.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/refs/tags/1.8.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "jquery/select2",
+            "version": "4.0.13",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/select2/select2/archive/refs/tags/4.0.13.zip",
+              "type": "zip"
+                }
+            }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "jquery/mmenu",
+            "version": "9.3.0",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/FrDH/mmenu-js/archive/refs/tags/v9.3.0.zip",
+              "type": "zip"
+                }
+            }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "jquery/superfish",
+            "version": "1.7.10",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/joeldbirch/superfish/archive/master.zip",
+              "type": "zip"
+                }
+            }
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.9",
+        "drupal/address": "^2.0@beta",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/better_exposed_filters": "^6.0",
+        "drupal/blazy": "^2.16",
+        "drupal/block_content_revision_ui": "^2.280",
+        "drupal/cache_control_override": "^1.1",
+        "drupal/content_access": "^2.0@RC",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-project-message": "^9",
+        "drupal/core-recommended": "^9",
+        "drupal/ctools": "^3.14",
+        "drupal/devel_entity_updates": "^3.0",
+        "drupal/draggableviews": "^2.1",
+        "drupal/entity": "^1.4",
+        "drupal/entity_clone": "^2.0@beta",
+        "drupal/entity_reference_views": "^1.1@beta",
+        "drupal/extlink": "^1.7",
+        "drupal/facets": "^3.0@beta",
+        "drupal/flag": "^4.0@beta",
+        "drupal/gin": "^3.0@RC",
+        "drupal/google_maps_services": "^1.0",
+        "drupal/jquery_ui_draggable": "^2.0",
+        "drupal/jquery_ui_droppable": "^2.0",
+        "drupal/layout_builder_modal": "^1.2",
+        "drupal/menu_item_extras": "^3.0",
+        "drupal/menu_item_role_access": "^2.1",
+        "drupal/menu_trail_by_path": "^2.0",
+        "drupal/paragraphs": "^1.15",
+        "drupal/pathauto": "^1.11",
+        "drupal/search_api": "^1.29",
+        "drupal/search_api_page": "^1.0",
+        "drupal/select2": "^1.15",
+        "drupal/simple_gmap": "^3.0",
+        "drupal/simple_menu_icons": "^3.0",
+        "drupal/slick": "^2.2",
+        "drupal/slick_views": "^2.7",
+        "drupal/social_link_field": "^1.1@alpha",
+        "drupal/social_media_links": "^2.9",
+        "drupal/token": "^1.12",
+        "drupal/views_bulk_operations": "^4.2",
+        "drupal/viewsreference": "^2.0@beta",
+        "drupal/vote_up_down": "^1.0@alpha",
+        "drupal/webform": "^6.1",
+        "drush/drush": "^10.2",
+        "jquery/mmenu": "^9.3",
+        "jquery/select2": "^4.0",
+        "jquery/superfish": "^1.7",
+        "kenwheeler/slick": "^1.8"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/8/install",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        },
+        "patches" : {
+            "drupal/slick" : {
+                "Support for Slick" : "https://www.drupal.org/files/issues/2020-07-02/3123787-14.patch"
+            }
+        }
+    }
+}

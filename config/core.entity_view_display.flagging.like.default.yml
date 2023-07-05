@@ -1,0 +1,38 @@
+uuid: c4b6aebe-018a-48d5-a687-13d8501630d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.flagging.like.field_like
+    - field.field.flagging.like.field_unlike
+    - flag.flag.like
+  module:
+    - image
+id: flagging.like.default
+targetEntityType: flagging
+bundle: like
+mode: default
+content:
+  field_like:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_unlike:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

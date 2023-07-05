@@ -1,0 +1,19 @@
+uuid: f424d07f-ae1c-4d51-87eb-ea0d41979b10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.contact
+id: node.contact.field_location
+field_name: field_location
+entity_type: node
+bundle: contact
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

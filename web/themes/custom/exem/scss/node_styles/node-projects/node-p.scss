@@ -1,0 +1,48 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../node--mixins";
+
+.node--type-project {
+  .node__content {
+    @include node-width;
+    .block-field-blocknodeprojectfield-image {
+      .field--name-field-image {
+        padding: 0 100px 100px 100px;
+        @include node-image(1.5);
+      }
+    }
+    .block-field-blocknodeprojecttitle {
+      @include node-title;
+    }
+    .block-field-blocknodeprojectbody {
+      @include node-body;
+    }
+    .block-field-blocknodeprojectfield-project-content {
+      @include node-paragraph-text;
+    }
+    .block-field-blocknodeprojectfield-type-project {
+      .field--name-field-type-project {
+        font-weight: 600;
+        font-size: 20px;
+        a[href="/services/drupal"] {
+          color: $light-blue;
+        }
+
+        a[href="/services/app-development"] {
+          color: $orange;
+        }
+
+        a[href="/services/php-development"] {
+          color: $purple;
+        }
+
+        a[href="/services/web-development"] {
+          color: $turquoise;
+        }
+      }
+    }
+  }
+}
+
+
+@import "node-p-media";

@@ -1,0 +1,35 @@
+uuid: cea0c750-d9df-47c3-bec5-8667f99f3a3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - contact
+    - filter
+    - flag
+    - media
+    - search
+    - search_api_page
+    - social_link_field
+    - system
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'configure social link field'
+  - 'flag like'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'unflag like'
+  - 'use text format basic_html'
+  - 'view media'
+  - 'view search api pages'

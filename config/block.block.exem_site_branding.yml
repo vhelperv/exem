@@ -1,0 +1,25 @@
+uuid: 3ddda591-7622-4025-9848-68c449ef40c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - exem
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: exem_site_branding
+theme: exem
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

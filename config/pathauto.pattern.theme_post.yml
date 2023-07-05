@@ -1,0 +1,22 @@
+uuid: 057875e6-5622-4907-84fc-5e4bf63e3b36
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: theme_post
+label: 'Theme Post'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/news/[term:name]'
+selection_criteria:
+  6e5af739-23eb-473f-919e-6f833a1cfa91:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 6e5af739-23eb-473f-919e-6f833a1cfa91
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      theme_post: theme_post
+selection_logic: and
+weight: -5
+relationships: {  }

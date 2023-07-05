@@ -1,0 +1,44 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+footer {
+  background-color: $dark-gray;
+  display: flex;
+  justify-content: center;
+  .region-footer {
+    width: 65%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .block-system-branding-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .site-name {
+        a {
+          margin-top: 4px;
+          color: $blue;
+          font-size: 37px;
+          font-weight: 500;
+          line-height: 0.7;
+          letter-spacing: 0.5px;
+          font-family: "Ysabeau Infant", sans-serif;
+        }
+      }
+      .site-slogan {
+        margin-top: 4px;
+        color: $white;
+        font-size: 14px;
+        margin-left: 3px;
+        line-height: 1.2;
+        letter-spacing: 0.6px;
+      }
+    }
+  }
+}
+
+
+
+@import "_footer-media.scss";

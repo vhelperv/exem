@@ -1,0 +1,66 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+@mixin block-projects {
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .views-row {
+      margin: 0 10px 0 10px;
+      background-color: $white;
+      border-bottom: 1px solid $black;
+      text-align: center;
+      text-transform: uppercase;
+
+      .views-field-field-image {
+        margin-bottom: 37px;
+      }
+
+      .views-field-title {
+        font-size: 25px;
+
+        a {
+          color: $dark-gray;
+        }
+      }
+
+      .views-field-field-type-project {
+        font-weight: 500;
+
+        a[href="/services/drupal"] {
+          color: $light-blue;
+        }
+
+        a[href="/services/app-development"] {
+          color: $orange;
+        }
+
+        a[href="/services/php-development"] {
+          color: $purple;
+        }
+
+        a[href="/services/web-development"] {
+          color: $light-sky;
+        }
+
+        margin: 12px 0;
+      }
+
+      .views-field-view-node {
+        margin: 25px 0 20px 0;
+
+        & span {
+          a {
+            padding: 6px 8px;
+            background-color: $dark-gray;
+            color: $white;
+            font-size: 14px;
+          }
+          @include black-button-hover;
+        }
+      }
+    }
+  }
+}

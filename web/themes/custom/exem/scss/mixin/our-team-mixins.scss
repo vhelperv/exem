@@ -1,0 +1,135 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+@mixin block-our-team {
+  .view-content {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .views-row {
+      margin: 0 10px 0 10px;
+      text-align: center;
+
+      .views-field-field-image {
+        img {
+          filter: grayscale(100%);
+
+          &:hover {
+            filter: none;
+          }
+
+          margin-bottom: 35px;
+        }
+      }
+
+      .views-field-title {
+        & span {
+          font-size: 25px;
+          line-height: 1.2;
+          a {
+            color: $dark-gray;
+          }
+        }
+      }
+
+      .views-field-field-position {
+        div {
+          font-size: 14px;
+          a {
+            color: $gray;
+          }
+        }
+      }
+
+      .views-field-view-node {
+        margin: 25px 0 23px 0;
+
+        & span {
+          a {
+            padding: 6px 8px;
+            background-color: $dark-gray;
+            color: $white;
+            font-size: 14px;
+          }
+          @include black-button-hover;
+        }
+      }
+
+      .views-field-field-social {
+        ul {
+          margin-left: 40px;
+
+          li {
+            a {
+              .fa-facebook-square {
+                &:before {
+                  content: url("../img/social/fb.png");
+                }
+              }
+            }
+          }
+
+          li {
+            margin: 0 5px;
+
+            a {
+              .fa-twitter-square {
+                &:before {
+                  content: url("../img/social/twit.png");
+                }
+              }
+            }
+          }
+
+          li {
+            a {
+              .fa-linkedin-square {
+                &:before {
+                  content: url("../img/social/in.png");
+                }
+              }
+            }
+          }
+        }
+
+        float: left;
+      }
+
+      .views-field-link-flag {
+        float: right;
+        margin: 7px 45px 0 0;
+
+        span {
+          .action-unflag {
+            a {
+              display: inline-block;
+              text-rendering: auto;
+              line-height: 1;
+              font-size: 0;
+
+              &:before {
+                content: url("../img/like/like.png");
+              }
+            }
+          }
+
+          .action-flag {
+            a {
+              display: inline-block;
+              text-rendering: auto;
+              line-height: 1;
+              font-size: 0;
+
+              &:before {
+                content: url("../img/like/unlike.png");
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

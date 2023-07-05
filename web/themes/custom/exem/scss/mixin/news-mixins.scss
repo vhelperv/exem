@@ -1,0 +1,165 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+@mixin block-news {
+  .view-empty {
+    text-transform: uppercase;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .view-filters {
+    .views-exposed-form {
+      padding: 18px 0;
+      display: flex;
+      flex-direction: row;
+      .form-type--textfield {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        input {
+          padding: 5px 15px;
+          min-height: auto;
+          border-radius: 3px;
+          width: 340px;
+          color: $dark-gray;
+          box-shadow: -7px -7px 0px rgba(255, 255, 255, 1), 7px -7px 0px rgba(255, 255, 255, 1), -7px 7px 0px rgba(255, 255, 255, 1), 7px 7px 0px rgba(255, 255, 255, 1);
+        }
+      }
+      .form-actions {
+        margin: 0;
+        input {
+          margin: 0 0 0 7px;
+          padding: 9px 15px;
+          border-radius: 3px;
+          letter-spacing: -1px;
+          color: $white;
+          font-weight: 500;
+          background-color: $but-search-new;
+          box-shadow: -7px -7px 0px rgba(255, 255, 255, 1), 7px -7px 0px rgba(255, 255, 255, 1), -7px 7px 0px rgba(255, 255, 255, 1), 7px 7px 0px rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+  .view-content {
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .views-row {
+      text-transform: uppercase;
+      background-color: $white;
+      padding: 20px;
+      width: 49%;
+      .views-field-created {
+        float: left;
+        width: 70px;
+        text-align: center;
+        padding-right: 15px;
+        .field-content {
+          word-wrap: break-word;
+          white-space: pre-wrap;
+          .month {
+            font-size: 22px;
+            color: $dark-gray;
+          }
+          .date {
+            font-size: 38px;
+            font-weight: 600;
+            color: $blue;
+            letter-spacing: -2px;
+          }
+          .year {
+            font-size: 16px;
+            color: $gray;
+          }
+        }
+      }
+      .views-field-field-image {
+        float: left;
+        padding: 0 10px 0 20px;
+        margin-bottom: 20px;
+        border-left: 2px solid $gray;
+      }
+      .views-field-field-author {
+        float: left;
+        font-size: 12px;
+        color: $dark-gray;
+        display: flex;
+        flex-direction: row;
+        letter-spacing: -1px;
+        margin: 0;
+        &:before {
+          content: "Writer";
+          color: $gray;
+          margin-right: 5px;
+        }
+        &:after {
+          content: "/";
+          margin: 0 5px;
+        }
+      }
+      .views-field-field-theme-post {
+        font-size: 12px;
+        float: left;
+        letter-spacing: -1px;
+        a {
+          color: $blue;
+        }
+      }
+      .views-field-created-1 {
+        color: $gray;
+        font-size: 12px;
+        text-align: right;
+        letter-spacing: -1px;
+      }
+      .views-field-title {
+        text-align: left;
+        clear: both;
+        margin-left: 70px;
+        padding: 0 0 20px 20px;
+        border-left: 2px solid $gray;
+        a {
+          color: $dark-gray;
+        }
+        font-size: 22px;
+        &:after {
+          content: "...";
+        }
+      }
+      .views-field-body {
+        margin-left: 70px;
+        padding-left: 20px;
+        border-left: 2px solid $gray;
+        color: $dark-gray;
+        font-size: 12px;
+        padding-bottom: 35px;
+        text-align: left;
+        p {
+          margin: 0;
+          &:after {
+            content: "...";
+          }
+        }
+
+      }
+      .views-field-view-node {
+        margin-left: 70px;
+        padding-left: 20px;
+        border-left: 2px solid $gray;
+        text-align: right;
+        & span {
+          a {
+            padding: 6px 10px;
+            background-color: $dark-gray;
+            color: $white;
+            font-size: 14px;
+          }
+          @include black-button-hover;
+        }
+      }
+    }
+  }
+}

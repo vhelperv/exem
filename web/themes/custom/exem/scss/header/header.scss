@@ -1,0 +1,272 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+header {
+  height: 114px;
+  @include resize;
+  z-index: 1;
+  top: 40px;
+  left: 17.5%;
+  background-color: $white;
+  box-shadow: -2px 6px 9px rgba(0, 0, 0, 0.2), 0px 3px 2px rgba(0, 0, 0, 0.2);
+  .region-header {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    .block-system-branding-block {
+      margin-right: auto;
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background-color: $dark-gray;
+      padding: 0 20px;
+      .site-name {
+        a {
+          margin-top: 4px;
+          color: $blue;
+          font-size: 33px;
+          font-weight: 500;
+          line-height: 0.7;
+          letter-spacing: 0.5px;
+          font-family: "Calibri", sans-serif;
+        }
+      }
+      .site-slogan {
+        margin-top: 4px;
+        color: $white;
+        font-size: 14px;
+        margin-left: 3px;
+        line-height: 1.2;
+        letter-spacing: 0.6px;
+      }
+    }
+    .burger-menu {
+      order: 2;
+      display: none;
+      height: 3px;
+      width: 30px;
+      background-color: $dark-gray;
+      position: relative;
+      &:before, &:after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 30px;
+        background-color: $dark-gray;
+      }
+      &:before {
+        top: 8px;
+      }
+      &:after {
+        top: -8px;
+      }
+      &.show {
+        background-color: inherit;
+        &:before {
+          top: 0;
+          transform: rotate(45deg);
+        }
+        &:after {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    nav {
+      margin-right: auto;
+      order: 2;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      ul {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        margin: 0;
+        li {
+          padding-top: 50px;
+          height: 100%;
+          list-style-type: none;
+          text-transform: uppercase;
+          position: relative;
+          margin-left: 15px;
+          a {
+            padding-bottom: 38px;
+            height: 100%;
+            color: $black;
+            font-size: 14px;
+            &:hover, &.is-active {
+              box-sizing: border-box;
+              border-bottom: 10px solid $blue;
+            }
+          }
+          &:nth-child(1) {
+            padding-top: 45px;
+            a {
+              display: inline-block;
+              text-rendering: auto;
+              line-height: 1;
+              font-size: 0;
+              &:hover, &.is-active {
+                border-bottom: 9.5px solid $blue;
+              }
+              &:before {
+                content: url("../img/Homepage-menu.png");
+              }
+            }
+          }
+        }
+      }
+    }
+    .block-social-media-links-block {
+      margin-right: auto;
+      height: 100%;
+      order: 3;
+      &.show {
+        height: 100px;
+        ul {
+          height: 100%;
+        }
+      }
+      display: flex;
+      align-items: center;
+      ul {
+        margin-left: 10px;
+        li {
+          padding: 0 3px;
+          a {
+            span {
+              &:before {
+                display: inline;
+                height: 25px;
+                width: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .search-block-form {
+      margin-right: auto;
+      height: 100%;
+      order: 4;
+      display: flex;
+      align-items: center;
+      form {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 20px;
+        .form-type--search {
+          .form-element--type-search {
+            border-radius: 0;
+            width: 200px;
+          }
+        }
+        .form-actions {
+          .search-form__submit {
+            margin-right: 0;
+            border-radius: 0;
+            user-select: none;
+            color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("../img/search.png");
+            background-color: $white;
+            border: 1px solid gray !important;
+            border-left: none !important;
+            width: 48.5px;
+            height: 48.5px;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    div.popup {
+      display: none;
+      .burger-menu {
+        position: absolute;
+        top: 30px;
+        right: 0;
+      }
+      &.see {
+        padding: 50px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: $white;
+        position: fixed;
+        left: -320px;
+        top: 0;
+        z-index: 3;
+        height: 100vh;
+        width: 320px;
+        translate: 320px;
+        overflow: scroll;
+        box-shadow: 13px 0 7px rgba(0, 0, 0, 0.3);
+        nav.replace {
+          order: 2;
+          display: flex;
+          align-items: center;
+          height: auto;
+          width: 100%;
+          ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            li {
+              padding-top: 5px;
+              height: 50px;
+              margin-left: 0;
+              a {
+                padding-bottom: 7px;
+                height: auto;
+                &:hover, &.is-active {
+                  box-sizing: border-box;
+                  border-bottom: 7px solid $blue;
+                }
+              }
+              &:nth-child(1) {
+                padding-top: 0;
+                a {
+                  font-size: 0;
+                }
+              }
+            }
+          }
+        }
+        .block-social-media-links-block.replace {
+          width: 100%;
+          order: 3;
+          display: flex;
+          justify-content: center;
+          ul {
+            margin-left: 10px;
+            li {
+              padding: 0 3px;
+              a {
+                span {
+                  &:before {
+                    display: inline;
+                    height: 25px;
+                    width: 25px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "header-media.scss";

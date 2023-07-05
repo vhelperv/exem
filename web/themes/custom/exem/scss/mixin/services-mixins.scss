@@ -1,0 +1,50 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+@mixin block-services {
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    .views-row {
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .views-field-field-image {
+        margin-bottom: 37px;
+      }
+
+      .views-field-title {
+        font-size: 23px;
+        letter-spacing: -1px;
+        a {
+          color: $dark-gray;
+        }
+      }
+
+      .views-field-body {
+        color: $gray;
+        font-size: 13.1px;
+        letter-spacing: -1px;
+        line-height: 1.2;
+        margin: 15px 0;
+      }
+
+      .views-field-view-node {
+        margin-top: 30px;
+
+        & span {
+          a {
+            padding: 6px 10px;
+            background-color: $blue;
+            color: $white;
+            font-size: 14px;
+          }
+          @include blue-button-hover;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+@import "variables.scss";
+@import "media-breakpoints.scss";
+
+@mixin home_page_block_title {
+  h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    @include desktop {
+      font-size: 25px;
+    }
+    @include tablet {
+      font-size: 21px;
+    }
+    font-weight: 700;
+    text-transform: uppercase;
+    &:before, &:after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $gray;
+    }
+    &:before {
+      margin-right: 20px;
+    }
+    &:after {
+      margin-left: 20px;
+    }
+  }
+}
+
+@mixin page_title {
+  h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    &:before, &:after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $gray;
+    }
+    &:before {
+      margin-right: 20px;
+    }
+    &:after {
+      margin-left: 20px;
+    }
+  }
+}
+
+@mixin main_way_to_block {
+  .main-content {
+    main {
+      .region-content {
+        .node--type-page {
+          @content
+        }
+      }
+    }
+  }
+}
+
+@mixin pager {
+  .pager {
+    margin: 0;
+    .pager__items {
+      margin: 0;
+      .pager__item {
+        margin: 0;
+        .pager__link {
+          font-weight: 400;
+          background: rgba(0, 0, 0, 0);
+          color: grey;
+          padding: 0;
+          &.is-active {
+            font-weight: bold;
+            border-radius: 50%;
+            background-color: $gray;
+            color: $light-black;
+          }
+        }
+      }
+      .pager__item--first {
+        .pager__link:before {
+          background-image: none;
+          content: "«";
+        }
+      }
+      .pager__item--previous {
+        .pager__link:before {
+          background-image: none;
+          content: "‹";
+        }
+      }
+      .pager__item--next {
+        .pager__link:after {
+          background-image: none;
+          content: "›";
+        }
+      }
+      .pager__item--last {
+        .pager__link:after {
+          background-image: none;
+          content: "»";
+        }
+      }
+    }
+  }
+}
+
+@mixin resize {
+  width: 65%;
+  margin: 0 auto;
+  @media (max-width: 1670px) {
+    width: 80%;
+  }
+}
+
+@mixin blue-button-hover {
+  a:hover {
+    background-color: $blue-hover;
+    box-shadow: 0 -2px 0 $blue;
+  }
+}
+
+@mixin black-button-hover {
+  a:hover {
+    background-color: $dark-gray-hover;
+    box-shadow: 0 -2px 0 $dark-gray;
+  }
+}

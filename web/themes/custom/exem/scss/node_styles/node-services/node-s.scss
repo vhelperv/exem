@@ -1,0 +1,26 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../node--mixins";
+
+.node--type-article {
+  .node__content {
+    @include node-width;
+    .block-field-blocknodearticlefield-image {
+      .field--name-field-image {
+        padding: 0 100px 100px 100px;
+        @include node-image(2);
+      }
+    }
+    .block-field-blocknodearticletitle {
+      @include node-title;
+    }
+    .block-field-blocknodearticlebody {
+      @include node-body;
+    }
+    .block-field-blocknodearticlefield-article-content {
+      @include node-paragraph-text;
+    }
+  }
+}
+
+@import "node-s-media";

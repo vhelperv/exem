@@ -1,0 +1,39 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../media-breakpoints";
+
+@media (max-width: 1670px) {
+  .region-content {
+    .block-page-title-block {
+      width: 80%;
+    }
+    .block-system-main-block {
+      article {
+        .layout__region--content {
+          .block-field-blocknodeaboutbody {
+            width: 80%;
+          }
+          .block-field-blocknodeaboutfield-contents {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+
+}
+
+@include laptop {
+
+}
+
+@include tablet {
+
+}
+
+@include mobile {
+
+}

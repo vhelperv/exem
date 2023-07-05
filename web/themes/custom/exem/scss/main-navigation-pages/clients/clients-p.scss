@@ -1,0 +1,27 @@
+@import "../../mixins";
+
+.view-id-page_clients {
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .views-row {
+      width: 50%;
+      text-align: center;
+      .views-field-field-image {
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+  }
+  @include pager;
+  .pager {
+    margin-top: 50px;
+  }
+}
+
+@import "clients-media";

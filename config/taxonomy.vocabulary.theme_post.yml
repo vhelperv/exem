@@ -1,0 +1,8 @@
+uuid: 1724ded4-3329-4fbf-b46d-fd8c2a9d4293
+langcode: en
+status: true
+dependencies: {  }
+name: 'Theme post'
+vid: theme_post
+description: ''
+weight: 0

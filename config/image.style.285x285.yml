@@ -1,0 +1,15 @@
+uuid: 5f3c36e7-7eb3-4746-89f2-e36e611245d3
+langcode: en
+status: true
+dependencies: {  }
+name: 285x285
+label: 285x285
+effects:
+  e8a1b371-8e4a-4a55-90da-3e38a41e289f:
+    uuid: e8a1b371-8e4a-4a55-90da-3e38a41e289f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 285
+      height: 285
+      anchor: center-center

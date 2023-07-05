@@ -1,0 +1,47 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../media-breakpoints";
+
+@include desktop {
+  .view-page-services {
+    .view-content {
+      .views-row {
+        width: 33.33%;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .view-page-services {
+    .view-content {
+      .views-row {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .view-page-services {
+    .view-content {
+      .views-row {
+        .views-field-title {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@include mobile {
+  .view-page-services {
+    .view-content {
+      .views-row {
+        width: 100%;
+        .views-field-view-node {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,214 @@
+uuid: 07ced0b3-7d48-4078-91f4-d9d87da0610a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.node.page.default
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.about
+    - node.type.article
+    - node.type.client
+    - node.type.contact
+    - node.type.draggableviews_demo
+    - node.type.employee
+    - node.type.news
+    - node.type.page
+    - node.type.project
+    - taxonomy.vocabulary.position
+    - taxonomy.vocabulary.theme_post
+  module:
+    - blazy_ui
+    - block
+    - block_content
+    - comment
+    - contact
+    - content_access
+    - contextual
+    - draggableviews
+    - entity_clone
+    - extlink
+    - facets
+    - field_ui
+    - file
+    - filter
+    - flag
+    - google_maps_services
+    - image
+    - layout_builder
+    - media
+    - menu_link_content
+    - node
+    - paragraphs
+    - path
+    - pathauto
+    - search
+    - search_api
+    - search_api_page
+    - slick_ui
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+    - update
+    - views_ui
+    - webform
+_core:
+  default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access draggableviews'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'access tour'
+  - 'access user contact forms'
+  - 'administer blazy'
+  - 'administer block_content display'
+  - 'administer block_content form display'
+  - 'administer blocks'
+  - 'administer comment display'
+  - 'administer comment fields'
+  - 'administer comment form display'
+  - 'administer comment types'
+  - 'administer comments'
+  - 'administer contact forms'
+  - 'administer contact_message display'
+  - 'administer contact_message form display'
+  - 'administer content types'
+  - 'administer display modes'
+  - 'administer entity clone'
+  - 'administer extlink'
+  - 'administer facets'
+  - 'administer filters'
+  - 'administer flagging display'
+  - 'administer flagging form display'
+  - 'administer flaggings'
+  - 'administer flags'
+  - 'administer google maps services'
+  - 'administer image styles'
+  - 'administer media display'
+  - 'administer media form display'
+  - 'administer menu'
+  - 'administer menu_link_content display'
+  - 'administer menu_link_content form display'
+  - 'administer node display'
+  - 'administer node form display'
+  - 'administer nodes'
+  - 'administer paragraph display'
+  - 'administer paragraph form display'
+  - 'administer pathauto'
+  - 'administer search'
+  - 'administer search_api'
+  - 'administer search_api_page'
+  - 'administer slick'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term form display'
+  - 'administer url aliases'
+  - 'administer user display'
+  - 'administer user form display'
+  - 'administer views'
+  - 'bypass node access'
+  - 'clone action entity'
+  - 'clone base_field_override entity'
+  - 'clone block entity'
+  - 'clone date_format entity'
+  - 'clone facets_facet entity'
+  - 'clone field_config entity'
+  - 'clone flag entity'
+  - 'clone menu_link_content entity'
+  - 'configure all page node layout overrides'
+  - 'configure any layout'
+  - 'configure editable page node layout overrides'
+  - 'create about content'
+  - 'create and edit custom blocks'
+  - 'create article content'
+  - 'create audio media'
+  - 'create client content'
+  - 'create contact content'
+  - 'create document media'
+  - 'create draggableviews_demo content'
+  - 'create employee content'
+  - 'create image media'
+  - 'create news content'
+  - 'create page content'
+  - 'create project content'
+  - 'create remote_video media'
+  - 'create terms in position'
+  - 'create terms in theme_post'
+  - 'create url aliases'
+  - 'create video media'
+  - 'delete any about content'
+  - 'delete any article content'
+  - 'delete any audio media'
+  - 'delete any client content'
+  - 'delete any contact content'
+  - 'delete any document media'
+  - 'delete any draggableviews_demo content'
+  - 'delete any employee content'
+  - 'delete any image media'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete any project content'
+  - 'delete any remote_video media'
+  - 'delete any video media'
+  - 'delete draggableviews_demo revisions'
+  - 'delete own about content'
+  - 'delete own article content'
+  - 'delete own client content'
+  - 'delete own contact content'
+  - 'delete own draggableviews_demo content'
+  - 'delete own employee content'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own project content'
+  - 'delete terms in position'
+  - 'delete terms in theme_post'
+  - 'edit any about content'
+  - 'edit any article content'
+  - 'edit any audio media'
+  - 'edit any client content'
+  - 'edit any contact content'
+  - 'edit any document media'
+  - 'edit any draggableviews_demo content'
+  - 'edit any employee content'
+  - 'edit any image media'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit any project content'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'edit any webform'
+  - 'edit any webform submission'
+  - 'edit behavior plugin settings'
+  - 'edit own comments'
+  - 'edit own draggableviews_demo content'
+  - 'edit terms in position'
+  - 'edit terms in theme_post'
+  - 'flag like'
+  - 'grant content access'
+  - 'revert all revisions'
+  - 'revert draggableviews_demo revisions'
+  - 'take_ownership_on_clone node entity'
+  - 'unflag like'
+  - 'use advanced search'
+  - 'use text format restricted_html'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view draggableviews_demo revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'
+  - 'view update notifications'

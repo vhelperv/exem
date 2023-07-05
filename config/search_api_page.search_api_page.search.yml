@@ -1,0 +1,30 @@
+uuid: b572af54-1986-49ad-8591-35368373d48e
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.main_search_index
+id: search
+label: Search
+path: search
+clean_url: true
+show_all_when_no_keys: false
+index: main_search_index
+limit: 10
+searched_fields:
+  title: title
+style: view_modes
+view_mode_configuration:
+  'entity:node':
+    default: teaser
+    overrides:
+      about: teaser
+      article: teaser
+      client: teaser
+      contact: teaser
+      employee: teaser
+      news: teaser
+      page: teaser
+      project: teaser
+show_search_form: false
+parse_mode: direct

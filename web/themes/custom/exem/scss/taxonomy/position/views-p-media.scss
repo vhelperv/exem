@@ -1,0 +1,98 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../media-breakpoints";
+
+@media (max-width: 1400px) {
+  .vocabulary-position {
+    .view-id-position {
+      .view-content {
+        .views-row {
+          .views-field-title {
+            & span {
+              font-size: 23px;
+            }
+          }
+          .views-field-field-social {
+            ul {
+              margin-left: 20px;
+            }
+          }
+          .views-field-link-flag {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .vocabulary-position {
+    .view-id-position {
+      .view-content {
+        grid-template-columns: 1fr 1fr 1fr;
+        .views-row {
+          .views-field-field-image {
+            img {
+              margin-bottom: 20px;
+            }
+          }
+          .views-field-title {
+            & span {
+              font-size: 18px;
+            }
+          }
+          .views-field-field-social {
+            ul {
+              margin-left: 10px;
+            }
+          }
+          .views-field-link-flag {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include laptop {
+  .vocabulary-position {
+    .block-field-blocktaxonomy-termpositionname {
+      margin-top: 150px;
+    }
+  }
+}
+
+@include tablet {
+  .vocabulary-position {
+    .view-id-position {
+      .view-content {
+        grid-template-columns: 1fr 1fr;
+        .views-row {
+          .views-field-title {
+            & span {
+              font-size: 19px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include mobile {
+  .vocabulary-position {
+    .view-id-position {
+      .view-content {
+        grid-template-columns: 1fr;
+        .views-row {
+          .views-field-title {
+            & span {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

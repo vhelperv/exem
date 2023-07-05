@@ -1,0 +1,86 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../media-breakpoints";
+
+@include laptop {
+  .node--type-employee {
+    .node__content {
+      .layout__region--content {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        .block-field-blocknodeemployeefield-image {
+          order: 1;
+
+          .field--name-field-image {
+            float: none;
+            margin-top: 250px;
+          }
+        }
+        .block-field-blocknodeemployeetitle {
+          margin: 0;
+          order: 2;
+          width: 100%;
+        }
+        .block-field-blocknodeemployeefield-position {
+          order: 3;
+          width: 100%;
+        }
+        .block-field-blocknodeemployeebody {
+          order: 4;
+        }
+        .block-field-blocknodeemployeefield-employee-content {
+          order: 5;
+        }
+        .block-field-blocknodeemployeefield-social {
+          order: 6;
+          text-align: left;
+          padding-left: 10px;
+          width: 50%;
+        }
+        .block-extra-field-blocknodeemployeeflag-like {
+          order: 7;
+          text-align: right;
+          padding-right: 10px;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .node--type-employee {
+    .node__content {
+      padding-bottom: 50px;
+      .layout__region--content {
+        .block-field-blocknodeemployeefield-image {
+          padding: 0 0 20px 0;
+          .field--name-field-image {
+            margin-top: 200px;
+            img {
+              transform: scale(1);
+            }
+          }
+        }
+        .block-field-blocknodeemployeetitle {
+          .field--name-title {
+            font-size: 20px;
+          }
+        }
+        .block-field-blocknodeemployeebody {
+          margin-top: 30px;
+          p {
+            font-size: 20px;
+          }
+        }
+        .block-field-blocknodeemployeefield-employee-content {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

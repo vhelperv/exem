@@ -1,0 +1,24 @@
+@import "nullstyle.scss";
+
+@import "global.scss";
+@import "header/header.scss";
+@import "footer/footer.scss";
+@import "home_page/home_page.scss";
+@import "search.scss";
+
+@import "main-navigation-pages/about/adout-p.scss";
+@import "main-navigation-pages/services/services-p.scss";
+@import "main-navigation-pages/projects/projects-p.scss";
+@import "main-navigation-pages/our-team/our-team-p.scss";
+@import "main-navigation-pages/clients/clients-p.scss";
+@import "main-navigation-pages/news/news-p.scss";
+@import "main-navigation-pages/contact/contact.scss";
+
+@import "node_styles/node-services/node-s.scss";
+@import "node_styles/node-projects/node-p.scss";
+@import "node_styles/node-our-team/node-ot.scss";
+@import "node_styles/node-news/node-n.scss";
+@import "node_styles/node-clients/node-c.scss";
+
+@import "taxonomy/position/views-p.scss";
+@import "taxonomy/theme post/views-tp.scss";

@@ -1,0 +1,23 @@
+uuid: 0436606b-2f74-4006-ab2f-272c73a74005
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.position
+  module:
+    - path
+id: taxonomy_term.position.default
+targetEntityType: taxonomy_term
+bundle: position
+mode: default
+content:
+  path:
+    type: path
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  name: true
+  status: true

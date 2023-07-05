@@ -1,0 +1,36 @@
+uuid: ea2d4f0f-89f3-48f7-b0e5-b4d580df5722
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client_content
+    - node.type.client
+    - paragraphs.paragraphs_type.images
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: node.client.field_client_content
+field_name: field_client_content
+entity_type: node
+bundle: client
+label: 'Client Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text: text
+      images: images
+    negate: 0
+    target_bundles_drag_drop:
+      images:
+        weight: -4
+        enabled: true
+      text:
+        weight: -5
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 604933bd-738a-4ab0-ae50-41884ecfc43b
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.token
+    - taxonomy.vocabulary.theme_post
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+id: taxonomy_term.theme_post.token
+targetEntityType: taxonomy_term
+bundle: theme_post
+mode: token
+content: {  }
+hidden:
+  description: true
+  search_api_excerpt: true

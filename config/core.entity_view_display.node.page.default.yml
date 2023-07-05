@@ -1,0 +1,143 @@
+uuid: eb74407c-371e-49ee-b8fe-7312af60b98b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.field.node.page.body
+    - node.type.page
+    - views.view.block_about
+    - views.view.block_clients
+    - views.view.block_news
+    - views.view.block_our_team
+    - views.view.block_projects
+    - views.view.block_service
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          07421904-e0f8-435a-aeca-36a560941d2b:
+            uuid: 07421904-e0f8-435a-aeca-36a560941d2b
+            region: content
+            configuration:
+              id: 'inline_block:banner'
+              label: Banner
+              label_display: '0'
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 10
+              block_serialized: null
+            weight: 0
+            additional: {  }
+          4c01f3b8-4194-4d1b-8b40-71687f777075:
+            uuid: 4c01f3b8-4194-4d1b-8b40-71687f777075
+            region: content
+            configuration:
+              id: 'views_block:block_about-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          6ef0893e-a2af-47ac-b4d4-ec5ced824498:
+            uuid: 6ef0893e-a2af-47ac-b4d4-ec5ced824498
+            region: content
+            configuration:
+              id: 'views_block:block_service-block_1'
+              label: Services
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: Services
+              items_per_page: none
+            weight: 2
+            additional: {  }
+          9a7bff2b-6025-4492-8755-edbb0ab47bfb:
+            uuid: 9a7bff2b-6025-4492-8755-edbb0ab47bfb
+            region: content
+            configuration:
+              id: 'views_block:block_projects-block_1'
+              label: Projects
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: Projects
+              items_per_page: none
+            weight: 3
+            additional: {  }
+          3b2b72af-373a-4ac6-aaf9-d52ababef5bf:
+            uuid: 3b2b72af-373a-4ac6-aaf9-d52ababef5bf
+            region: content
+            configuration:
+              id: 'views_block:block_our_team-block_1'
+              label: 'Our Team'
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: 'Our Team'
+              items_per_page: none
+            weight: 4
+            additional: {  }
+          d38a4358-d44c-43d2-8f14-81711e8be849:
+            uuid: d38a4358-d44c-43d2-8f14-81711e8be849
+            region: content
+            configuration:
+              id: 'views_block:block_news-block_1'
+              label: News
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: News
+              items_per_page: none
+            weight: 5
+            additional: {  }
+          4e6be550-1a5c-4965-b6b8-6260c3c2c7f7:
+            uuid: 4e6be550-1a5c-4965-b6b8-6260c3c2c7f7
+            region: content
+            configuration:
+              id: 'views_block:block_clients-block_1'
+              label: Clients
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: Clients
+              items_per_page: none
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  flag_bookmark: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true

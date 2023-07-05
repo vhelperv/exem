@@ -1,0 +1,43 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../media-breakpoints";
+
+@include laptop {
+  .node--type-news {
+    .node__content {
+      .layout__region--content {
+        .block-field-blocknodenewstitle {
+          margin-top: 170px;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .node--type-news {
+    .node__content {
+      padding-bottom: 50px;
+      .layout__region--content {
+        .block-field-blocknodenewstitle {
+          .field--name-title {
+            font-size: 25px;
+          }
+        }
+        .block-field-blocknodenewsbody {
+          margin-top: 30px;
+          p {
+            font-size: 20px;
+          }
+        }
+        .block-field-blocknodenewsfield-news-content {
+          .paragraph--type--text {
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

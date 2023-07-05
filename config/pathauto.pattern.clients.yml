@@ -1,0 +1,22 @@
+uuid: 1aa06e4c-1d51-41bb-8ccb-ef78e7fb1dc2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: clients
+label: Clients
+type: 'canonical_entities:node'
+pattern: '/clients/[node:title]'
+selection_criteria:
+  6d127234-4de6-4052-a94e-2bf8593f1c56:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 6d127234-4de6-4052-a94e-2bf8593f1c56
+    context_mapping:
+      node: node
+    bundles:
+      client: client
+selection_logic: and
+weight: 0
+relationships: {  }

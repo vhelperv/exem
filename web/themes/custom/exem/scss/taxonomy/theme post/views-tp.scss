@@ -1,0 +1,58 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../mixin/news-mixins.scss";
+
+.vocabulary-theme-post {
+  .block-field-blocktaxonomy-termtheme-postname {
+    white-space: nowrap;
+    @include resize;
+    margin-top: 200px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:before, &:after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $gray;
+    }
+    &:before {
+      margin-right: 20px;
+    }
+    &:after {
+      margin-left: 20px;
+    }
+  }
+  .view-id-theme_post {
+    @include block-news;
+    .view-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .views-row {
+        border-top: 1px dotted $gray;
+        border-left: 1px dotted $gray;
+        border-radius: 10px;
+        border-spacing: revert;
+        width: 49.5%;
+        margin-top: 20px;
+        .views-field-field-theme-post {
+          color: $blue;
+        }
+      }
+    }
+    @include pager;
+    .pager {
+      margin-top: 50px;
+    }
+  }
+}
+
+@import "views-tp-media.scss";

@@ -1,0 +1,30 @@
+uuid: c5e661d8-9da6-46fc-b891-290a22f32fe3
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - flag
+    - image
+id: flagging.field_like
+field_name: field_like
+entity_type: flagging
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

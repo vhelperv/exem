@@ -1,0 +1,22 @@
+uuid: 5210486b-a68e-458f-b8c8-7fb1637885ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - exem
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: exem_content
+theme: exem
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

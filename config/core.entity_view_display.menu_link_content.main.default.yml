@@ -1,0 +1,39 @@
+uuid: 7f397bd9-1294-44d1-b858-7d12fc84528e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.main.field_image
+    - system.menu.main
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: menu_link_content.main.default
+targetEntityType: menu_link_content
+bundle: main
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  menu_item_override_children: true
+  menu_item_roles: true
+  search_api_excerpt: true

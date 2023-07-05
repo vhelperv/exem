@@ -1,0 +1,29 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../mixin/projects-mixins";
+
+.view-page-projects {
+  @include block-projects;
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .views-row {
+      border-bottom: none;
+      padding: 0;
+      margin: 30px 10px;
+      .views-field-title {
+        span {
+          a {
+            color: $dark-gray;
+          }
+        }
+      }
+    }
+  }
+  @include pager;
+  .pager {
+    margin-top: 50px;
+  }
+}
+
+@import "projects-media";

@@ -1,0 +1,26 @@
+uuid: a41afd03-ce47-4ee5-b99c-4578c4627756
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - exem
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: exem_page_title
+theme: exem
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/services/*\r\n/our-team/*\r\n/clients/*\r\n/projects/*\r\n/news/*\r\n/contact-us"

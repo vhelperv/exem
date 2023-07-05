@@ -1,0 +1,27 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../node--mixins";
+
+.node--type-client {
+  .node__content {
+    @include node-width;
+    .layout__region--content {
+      .block-field-blocknodeclienttitle {
+        @include node-title;
+        margin-top: 250px;
+      }
+      .block-field-blocknodeclientfield-image {
+        padding: 0 70px 70px 70px;
+        @include node-image(1.5);
+      }
+      .block-field-blocknodeclientbody {
+        @include node-body;
+      }
+      .block-field-blocknodeclientfield-client-content {
+        @include node-paragraph-text;
+      }
+    }
+  }
+}
+
+@import "node-c-media.scss";

@@ -1,0 +1,82 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../media-breakpoints";
+
+@media (max-width: 1400px) {
+  .view-id-our_team {
+    .view-content {
+      .views-row {
+        .views-field-title {
+          & span {
+            font-size: 23px;
+          }
+        }
+        .views-field-field-social {
+          ul {
+            margin-left: 20px;
+          }
+        }
+        .views-field-link-flag {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .view-id-our_team {
+    .view-content {
+      grid-template-columns: 1fr 1fr 1fr;
+      .views-row {
+        .views-field-field-image {
+          img {
+            margin-bottom: 20px;
+          }
+        }
+        .views-field-title {
+          & span {
+            font-size: 18px;
+          }
+        }
+        .views-field-field-social {
+          ul {
+            margin-left: 10px;
+          }
+        }
+        .views-field-link-flag {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .view-id-our_team {
+    .view-content {
+      grid-template-columns: 1fr 1fr;
+      .views-row {
+        .views-field-title {
+          & span {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+@include mobile {
+  .view-id-our_team {
+    .view-content {
+      grid-template-columns: 1fr;
+      .views-row {
+        .views-field-title {
+          & span {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

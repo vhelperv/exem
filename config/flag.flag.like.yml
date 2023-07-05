@@ -1,0 +1,43 @@
+uuid: 844154a1-50e8-45aa-9e71-5c74537760eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: like
+label: Like
+bundles:
+  - employee
+entity_type: node
+global: false
+flag_short: Like
+flag_long: ''
+flag_message: ''
+unflag_short: Unlike
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+    rss: rss
+    search_index: search_index
+    search_result: search_result
+    teaser: teaser
+    token: token
+  show_as_field: true
+  show_on_form: true
+  show_contextual_link: true
+  extra_permissions:
+    owner: '0'
+linkTypeConfig:
+  flag_confirmation: 'Enter flagging details'
+  unflag_confirmation: 'Unflag this content?'
+  flag_create_button: 'Create flagging'
+  flag_delete_button: 'Delete flagging'
+  form_behavior: default
+  edit_flagging: 'Edit flagging details'
+  flag_update_button: 'Update flagging'

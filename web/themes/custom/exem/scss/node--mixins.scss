@@ -1,0 +1,55 @@
+//////////////////////Width node///////////////////////////
+@mixin node-width {
+  width: 65%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  @media (max-width: 1670px) {
+    width: 80%;
+  }
+}
+
+//////////////////////Title node///////////////////////////
+@mixin node-title {
+  white-space: nowrap;
+  margin-top: 250px;
+  @media (max-width: 980px) {
+    margin-top: 250px;
+  }
+  .field--name-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: none;
+  }
+}
+
+////////////////////////Image node//////////////////////////
+@mixin node-image($scale) {
+  float: right;
+  img {
+    transform: scale($scale);
+  }
+}
+
+/////////////////////////Body node//////////////////////////
+@mixin node-body {
+  margin: 50px 0 30px 0;
+  p {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: capitalize;
+  }
+}
+
+///////////////////////Paragraph node////////////////////////
+@mixin node-paragraph-text {
+  .paragraph--type--text {
+    margin: 0 0 30px 0;
+    p {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.2;
+      text-transform: capitalize;
+    }
+  }
+}

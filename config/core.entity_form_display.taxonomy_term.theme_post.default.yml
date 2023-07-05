@@ -1,0 +1,23 @@
+uuid: 24304437-f8a7-42b6-b88c-bee400fb50d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.theme_post
+  module:
+    - path
+id: taxonomy_term.theme_post.default
+targetEntityType: taxonomy_term
+bundle: theme_post
+mode: default
+content:
+  path:
+    type: path
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  name: true
+  status: true

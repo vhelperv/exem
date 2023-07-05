@@ -1,0 +1,5 @@
+_core:
+  default_config_hash: zUTfne3MV5FCSZaP-uBogwiAoqeoq07tVXYJjZahdV0
+api_key: AIzaSyDv-Jdh5ebqEkILIMVbs4OIn6xQAL2Ov9E
+api_base_uri: 'https://maps.googleapis.com/'
+api_cache_maximum_age: 0

@@ -1,0 +1,64 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../node--mixins";
+
+.node--type-news {
+  .node__content {
+    @include node-width;
+     .layout__region--content {
+       .block-field-blocknodenewstitle {
+         @include node-title;
+         white-space: normal;
+         text-align: center;
+         margin-top: 200px;
+       }
+       .block-field-blocknodenewscreated {
+         text-align: center;
+         font-size: 20px;
+         color: $light-black;
+       }
+       .block-field-blocknodenewsfield-theme-post {
+         text-align: center;
+         font-size: 20px;
+         line-height: 1.2;
+         font-weight: 500;
+         a {
+           color: $blue;
+         }
+       }
+       .block-field-blocknodenewsbody {
+         order: 4;
+         @include node-body;
+         margin-top: 20px;
+         p {
+           font-size: 28px;
+         }
+       }
+       .block-field-blocknodenewsfield-news-content {
+         @include node-paragraph-text;
+         .paragraph--type--text {
+           p {
+             font-size: 28px;
+           }
+         }
+       }
+       .block-field-blocknodenewsfield-image {
+         text-align: right;
+         float: right;
+         margin-right: 37px;
+         margin-left: 10px;
+         img {
+           border-radius: 5px;
+         }
+       }
+       .block-field-blocknodenewsfield-author {
+         padding-top: 35px;
+         text-align: right;
+         color: $dark-gray;
+         font-size: 20px;
+       }
+     }
+  }
+}
+
+@import "node-n-media";

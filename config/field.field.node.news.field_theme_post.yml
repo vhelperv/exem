@@ -1,0 +1,29 @@
+uuid: 82594c67-0b46-445f-946c-956d471e4c42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_theme_post
+    - node.type.news
+    - taxonomy.vocabulary.theme_post
+id: node.news.field_theme_post
+field_name: field_theme_post
+entity_type: node
+bundle: news
+label: 'Theme post'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      theme_post: theme_post
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

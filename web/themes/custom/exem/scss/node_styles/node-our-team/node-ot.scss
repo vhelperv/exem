@@ -1,0 +1,98 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../node--mixins";
+
+.node--type-employee {
+  .node__content {
+    @include node-width;
+    .block-field-blocknodeemployeetitle {
+      @include node-title;
+    }
+    .block-field-blocknodeemployeefield-image {
+       @include node-image(1.5);
+      padding: 0 100px 100px 100px;
+    }
+    .block-field-blocknodeemployeefield-position {
+      a {
+        color: $blue;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .block-field-blocknodeemployeebody {
+      @include node-body;
+    }
+    .block-field-blocknodeemployeefield-employee-content {
+      @include node-paragraph-text;
+    }
+    .block-field-blocknodeemployeefield-social {
+      float: left;
+      .social-link-field {
+        margin-left: 0;
+        li {
+          a {
+            .fa-facebook {
+              &:before {
+                content: url("../img/social/fb.png");
+              }
+            }
+          }
+        }
+
+        li {
+          margin: 0 5px;
+
+          a {
+            .fa-twitter {
+              &:before {
+                content: url("../img/social/twit.png");
+              }
+            }
+          }
+        }
+
+        li {
+          a {
+            .fa-linkedin {
+              &:before {
+                content: url("../img/social/in.png");
+              }
+            }
+          }
+        }
+      }
+
+    }
+    .block-extra-field-blocknodeemployeeflag-like {
+      float: right;
+      margin: 7px 0 0 0;
+      .action-unflag {
+        a {
+          display: inline-block;
+          text-rendering: auto;
+          line-height: 1;
+          font-size: 0;
+
+          &:before {
+            content: url("../img/like/like.png");
+          }
+        }
+      }
+
+      .action-flag {
+        a {
+          display: inline-block;
+          text-rendering: auto;
+          line-height: 1;
+          font-size: 0;
+
+          &:before {
+            content: url("../img/like/unlike.png");
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "node-ot-media";

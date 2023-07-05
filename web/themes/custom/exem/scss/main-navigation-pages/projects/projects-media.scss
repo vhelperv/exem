@@ -1,0 +1,57 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../media-breakpoints";
+
+@media (max-width: 1400px) {
+  .view-page-projects {
+    .view-content {
+      .views-row {
+        .views-field-title {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .view-page-projects {
+    .view-content {
+      grid-template-columns: 1fr 1fr 1fr;
+      .views-row {
+        .views-field-title {
+          font-size: 17px;
+        }
+        .views-field-field-type-project {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .view-page-projects {
+    .view-content {
+      grid-template-columns: 1fr 1fr;
+      .views-row {
+        .views-field-field-image {
+          margin-bottom: 20px;
+        }
+        .views-field-title {
+          font-size: 20px;
+        }
+        .views-field-field-type-project {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@include mobile {
+  .view-page-projects {
+    .view-content {
+      grid-template-columns: 1fr;
+    }
+  }
+}

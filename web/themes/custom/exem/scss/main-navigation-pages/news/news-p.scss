@@ -1,0 +1,31 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../mixin/news-mixins";
+
+.view-id-page_news {
+  @include block-news;
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .views-row {
+      border-top: 1px dotted $gray;
+      border-left: 1px dotted $gray;
+      border-radius: 10px;
+      border-spacing: revert;
+      width: 49.5%;
+      margin-top: 20px;
+    }
+  }
+  .view-filters {
+    margin-bottom: 50px;
+  }
+  @include pager;
+  .pager {
+    margin-top: 50px;
+  }
+}
+
+@import "news-media";

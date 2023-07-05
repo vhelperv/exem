@@ -1,0 +1,70 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../media-breakpoints";
+
+@include laptop {
+  .node--type-client {
+    .node__content {
+      .layout__region--content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .block-field-blocknodeclientfield-image {
+          order: 1;
+          .field--name-field-image {
+            float: none;
+            margin-top: 250px;
+          }
+        }
+        .block-field-blocknodeclienttitle {
+          margin: 0;
+          order: 2;
+        }
+        .block-field-blocknodeclientbody {
+          order: 3;
+        }
+        .block-field-blocknodeclientfield-client-content {
+          order: 4;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .node--type-client {
+    .node__content {
+      padding-bottom: 50px;
+      .layout__region--content {
+        .block-field-blocknodeclientfield-image {
+          padding: 0 60px 30px 60px;
+          .field--name-field-image {
+            margin-top: 200px;
+            img {
+              transform: scale(1.5);
+            }
+          }
+        }
+        .block-field-blocknodeclienttitle {
+          padding-top: 20px;
+          .field--name-title {
+            font-size: 20px;
+          }
+        }
+        .block-field-blocknodeclientbody {
+          margin-top: 30px;
+          p {
+            font-size: 20px;
+          }
+        }
+        .block-field-blocknodeclientfield-client-content {
+          .paragraph--type--text {
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

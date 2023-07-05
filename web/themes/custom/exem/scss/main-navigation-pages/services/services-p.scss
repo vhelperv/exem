@@ -1,0 +1,28 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../mixin/services-mixins";
+
+.view-page-services {
+  @include block-services;
+  .view-content {
+    flex-wrap: wrap;
+    .views-row {
+      width: 25%;
+      padding: 0 12px;
+      margin: 30px auto;
+      .views-field-title {
+        span {
+          a {
+            color: $dark-gray;
+          }
+        }
+      }
+    }
+  }
+  @include pager;
+  .pager {
+    margin-top: 50px;
+  }
+}
+
+@import "services-media";

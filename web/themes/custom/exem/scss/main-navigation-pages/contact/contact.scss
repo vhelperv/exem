@@ -1,0 +1,146 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../node--mixins";
+
+.node--type-contact  {
+  .node__content {
+    @include node-width;
+    .layout--onecol {
+      .layout__region--content {
+        .block-field-blocknodecontacttitle {
+          @include node-title;
+          margin: 200px 0 50px 0;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .field--name-title {
+            text-transform: uppercase;
+            font-size: 25px;
+            letter-spacing: -1.5px;
+            padding: 10px;
+          }
+          &:after {
+            content: "";
+            height: 5px;
+            width: 70px;
+            background-color: $gray;
+          }
+        }
+      }
+    }
+    .layout--twocol-section--50-50 {
+      .layout__region--first {
+        width: 50%;
+        padding-right: 10px;
+        .block-field-blocknodecontactfield-contact-us-form {
+          form {
+            > * {
+              margin-top: 15px;
+              margin-bottom: 15px;
+            }
+            .form-item--full-name {
+              input {
+                width: 100%;
+                padding: 15px 10px;
+              }
+            }
+            .form-item--email {
+              input {
+                width: 100%;
+                padding: 15px 10px;
+              }
+            }
+            .form-item--mobile-number {
+              .iti {
+                width: 100%;
+                input {
+                  width: 100%;
+                  padding: 15px 10px;
+                }
+                .iti__flag-container {
+                  display: none;
+                }
+                &:hover, &:focus {
+                  & > .iti__flag-container {
+                    display: block;
+                  }
+                  & > input {
+                    padding-left: 50px;
+                  }
+                }
+              }
+            }
+            .form-item--your-message {
+              textarea {
+                padding: 15px 10px;
+                height: 250px;
+              }
+              .resize-vertical {
+                resize: none;
+              }
+            }
+            .form-actions {
+              .form-submit {
+                margin: 0;
+              }
+              .button--primary {
+                border-radius: 3px;
+                background-color: $orange;
+                &:hover {
+                  background-color: $dark-orange;
+                  box-shadow: 0 -2px 0 $orange;
+                }
+              }
+              .button {
+                font-size: 18px;
+                font-weight: 500;
+                padding: 20px 40px;
+                letter-spacing: -1px;
+              }
+            }
+          }
+        }
+      }
+      .layout__region--second {
+        width: 50%;
+        padding-left: 10px;
+        .block-field-blocknodecontactbody {
+          .field--type-text-with-summary {
+            h2 {
+              font-size: 23px;
+              font-weight: 600;
+              letter-spacing: -2px;
+              text-transform: uppercase;
+            }
+            p {
+              font-size: 18px;
+              letter-spacing: -1px;
+              margin: 10px 0;
+            }
+          }
+
+          margin-bottom: 30px;
+        }
+        .block-field-blocknodecontactfield-location {
+          iframe {
+            height: 270px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.webform-confirmation {
+  @include resize;
+  text-align: center;
+  text-transform: uppercase;
+  .webform-confirmation__message {
+    font-size: 18px;
+  }
+}
+
+
+
+@import "contact-media.scss";

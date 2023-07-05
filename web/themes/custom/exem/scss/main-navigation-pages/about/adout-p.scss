@@ -1,0 +1,51 @@
+@import "../../mixins";
+@import "../../variables";
+
+.region-content {
+  .block-page-title-block {
+    @include page_title;
+    @include resize;
+  }
+  .block-system-main-block {
+    text-align: left;
+    article {
+      .layout__region--content {
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.2;
+        .block-field-blocknodeaboutbody {
+          width: 65%;
+          margin: 0 auto 15px auto;
+          .field--type-text-with-summary {
+            p {
+              margin: 0;
+            }
+          }
+        }
+        .block-field-blocknodeaboutfield-contents {
+          width: 65%;
+          margin: 0 auto;
+          .field--name-field-contents {
+            padding-bottom: 30px;
+            .field__item {
+              margin-bottom: 15px;
+              .paragraph--type--text {
+                .field--name-field-text {
+                  .field__item {
+                    margin-bottom: 0;
+                    p {
+                      margin: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@import "about-media";

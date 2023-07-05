@@ -1,0 +1,19 @@
+{
+  "name": "exem",
+  "version": "1.0.0",
+  "description": "This is a sample Drupal 9 with Composer installation pre-configured for use with Docksal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vhelperv/exem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vhelperv/exem/issues"
+  },
+  "homepage": "https://github.com/vhelperv/exem#readme"
+}

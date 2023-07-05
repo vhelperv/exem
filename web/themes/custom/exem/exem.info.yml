@@ -1,0 +1,19 @@
+name: "exem"
+distribution: "Custom Theme"
+type: theme
+core_version_requirement: ^9
+base theme: claro
+
+libraries:
+  - exem/global
+
+stylesheets-remove:
+  - '@claro/css/components/menu.css'
+  - '@claro/css/components/views-exposed-form.css'
+
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  highlighted: Highlighted
+  content: Content
+  footer: Footer

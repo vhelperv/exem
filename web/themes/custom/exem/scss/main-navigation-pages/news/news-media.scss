@@ -1,0 +1,214 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../media-breakpoints";
+
+
+@media (max-width: 1825px) {
+  .view-id-page_news {
+    width: 100%;
+    .view-filters {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .view-id-page_news {
+    .view-content {
+      .views-row {
+        .views-field-title {
+          height: 64px;
+        }
+        .views-field-field-theme-post {
+          float: none;
+        }
+        .views-field-created-1 {
+          text-align: left;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .view-id-page_news {
+    .view-content {
+      padding-bottom: 30px;
+
+      .views-row {
+        .views-field-field-author {
+          float: none;
+
+          &:after {
+            display: none;
+          }
+        }
+
+        .views-field-field-theme-post {
+          text-align: left;
+          margin-top: 5px;
+        }
+
+        .views-field-created-1 {
+          text-align: left;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@include laptop {
+  .view-id-page_news {
+    .view-content {
+      .views-row {
+        .views-field-field-image {
+          float: none;
+          margin-left: 70px;
+        }
+
+        .views-field-field-author {
+          margin-left: 70px;
+          padding-left: 20px;
+          border-left: 2px solid $gray;
+        }
+
+        .views-field-field-theme-post {
+          margin: 0 0 0 70px;
+          padding: 5px 0 0 20px;
+          border-left: 2px solid $gray;
+        }
+
+        .views-field-created-1 {
+          margin: 0 0 0 70px;
+          padding: 5px 0 0 20px;
+          border-left: 2px solid $gray;
+        }
+
+        .views-field-title {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+
+        .views-field-body {
+          padding-bottom: 20px;
+          font-size: 10px;
+          line-height: 1.2;
+        }
+
+        .views-field-view-node {
+          span {
+            a {
+              font-size: 12px;
+              padding: 5px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .view-id-page_news {
+    .view-filters {
+      .views-exposed-form {
+        .form-type--textfield {
+          input {
+            width: 250px;
+          }
+        }
+      }
+    }
+    .view-content {
+      flex-direction: column;
+      align-items: center;
+      .views-row {
+        width: 100%;
+        &:not(:nth-child(1)) {
+          margin-top: 20px;
+        }
+        .views-field-field-image {
+          float: left;
+          margin-left: 0;
+        }
+        .views-field-field-author {
+          margin-left: 0;
+          padding-left: 0;
+          border-left:  none;
+        }
+        .views-field-field-theme-post {
+          margin: 0;
+          padding: 0;
+          border-left:  none;
+        }
+        .views-field-created-1 {
+          margin: 0;
+          padding: 0;
+          border-left:  none;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .view-id-page_news {
+    .view-filters {
+      .views-exposed-form {
+        .form-type--textfield {
+          input {
+            width: 150px;
+          }
+        }
+      }
+    }
+    .view-content {
+      .views-row {
+        margin-top: 25px;
+        padding: 15px;
+        .views-field-created {
+          padding-right: 10px;
+        }
+        .views-field-field-image {
+          float: none;
+          margin-left: 70px;
+          padding-left: 15px;
+        }
+        .views-field-field-author {
+          margin-left: 70px;
+          padding-left: 15px;
+          border-left: 2px solid $gray;
+        }
+        .views-field-field-theme-post {
+          margin: 0 0 0 70px;
+          padding: 5px 0 0 15px;
+          border-left: 2px solid $gray;
+        }
+        .views-field-created-1 {
+          margin: 0 0 0 70px;
+          padding: 5px 0 0 15px;
+          border-left: 2px solid $gray;
+        }
+        .views-field-title {
+          padding-left: 15px;
+          span {
+            font-size: 18px;
+          }
+        }
+        .views-field-body {
+          padding-left: 15px;
+        }
+        .views-field-view-node {
+          span {
+            a {
+              font-size: 12px;
+              padding: 5px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

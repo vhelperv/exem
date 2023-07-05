@@ -1,0 +1,624 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+@import "../media-breakpoints.scss";
+
+@media (max-width: 1825px) {
+  @include main_way_to_block {
+    .block-views {
+      width: 80%;
+    }
+    .block-inline-blockbanner {
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 10%;
+        width: 80%;
+      }
+    }
+    .block-views-blockblock-projects-block-1 {
+      width: 100%;
+      h2 {
+        width: 80%;
+      }
+      .view-id-block_projects {
+        width: 100%;
+        .view-content {
+          width: 80%;
+        }
+      }
+    }
+    .block-views-blockblock-news-block-1 {
+      width: 100%;
+      h2 {
+        width: 80%;
+      }
+      .view-id-block_news {
+        width: 100%;
+        .view-filters {
+          width: 80%;
+        }
+        .view-content {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  @include main_way_to_block {
+    .block-inline-blockbanner {
+      .field--type-text-with-summary {
+        top: 40%;
+        h2 {
+          font-size: 60px;
+        }
+        h3 {
+          font-size: 35px;
+        }
+      }
+    }
+    .block-views-blockblock-about-block-1 {
+      & div {
+        .view-id-block_about {
+          .view-content {
+            .views-row {
+              .views-field-body {
+                & div {
+                  font-size: 15px;
+                }
+              }
+              .views-field-view-node {
+                & span {
+                  a {
+                    padding: 6px 6px;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-service-block-1 {
+      .view-id-block_service {
+        .view-content {
+          .views-row {
+            .views-field-title {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-projects-block-1 {
+      .view-id-block_projects {
+        .view-content {
+          .views-row {
+            .views-field-title {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-our-team-block-1 {
+      .view-id-block_our_team {
+        .view-content {
+          .views-row {
+            .views-field-title {
+              & span {
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-news-block-1 {
+      .view-id-block_news {
+        .view-content {
+          .views-row {
+            .views-field-field-theme-post {
+              float: none;
+            }
+            .views-field-created-1 {
+              text-align: left;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  @include main_way_to_block {
+    .block-inline-blockbanner {
+      .field--type-text-with-summary {
+        top: 45%;
+        left: 18%;
+      }
+    }
+    .block-views-blockblock-about-block-1 {
+      & div {
+        .view-id-block_about {
+          .view-content {
+            margin: 60px 0;
+            .views-row {
+              .views-field-title {
+                & span {
+                  font-size: 25px;
+                }
+              }
+              .views-field-body {
+                & div {
+                  font-size: 12px;
+                }
+              }
+              .views-field-view-node {
+                & span {
+                  a {
+                    padding: 4px 4px;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-service-block-1 {
+      .view-id-block_service {
+        .view-content {
+          margin: 50px 0 70px 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 30px;
+          grid-row-gap: 40px;
+          .views-row {
+            .views-field-title {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-projects-block-1 {
+      .view-id-block_projects {
+        .view-content {
+          padding: 30px 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-row-gap: 40px;
+          place-items: center;
+          .views-row {
+            max-width: 290px;
+          }
+        }
+        .pager {
+          padding-bottom: 50px;
+        }
+      }
+    }
+    .block-views-blockblock-our-team-block-1 {
+      margin-bottom: 70px;
+      h2 {
+        margin-top: 50px;
+      }
+      .view-id-block_our_team {
+        .view-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-row-gap: 40px;
+          place-items: center;
+          .views-row {
+            .views-field-title {
+              & span {
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-news-block-1 {
+      .view-id-block_news {
+        .view-content {
+          padding-bottom: 30px;
+          .views-row {
+            .views-field-field-author {
+              float: none;
+              &:after {
+                display: none;
+              }
+            }
+            .views-field-field-theme-post {
+              text-align: left;
+              margin-top: 5px;
+            }
+            .views-field-created-1 {
+              text-align: left;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-clients-block-1 {
+      .view-id-block_clients {
+        padding: 30px 0 60px 0;
+      }
+    }
+  }
+}
+
+@include laptop {
+  @include main_way_to_block {
+    .block-inline-blockbanner {
+      .field--type-text-with-summary {
+        top: 50%;
+        left: 15%;
+        h2 {
+          font-size: 40px;
+        }
+        h3 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+      img {
+        min-height: 300px;
+        object-fit: cover;
+      }
+    }
+    .block-views-blockblock-about-block-1 {
+      & div {
+        .view-id-block_about {
+          .view-content {
+            .views-row {
+              flex-direction: column;
+              .views-field-title {
+                span {
+                  margin: 0 auto 5px auto;
+                }
+              }
+              .views-field-body {
+                div {
+                  text-align: center;
+                  margin-bottom: 10px;
+                }
+              }
+              .views-field-view-node {
+                span {
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-news-block-1 {
+      .view-id-block_news {
+        .view-content {
+          .views-row {
+            .views-field-field-image {
+              float: none;
+              margin-left: 70px;
+            }
+            .views-field-field-author {
+              margin-left: 70px;
+              padding-left: 20px;
+              border-left: 2px solid $gray;
+            }
+            .views-field-field-theme-post {
+              margin: 0 0 0 70px;
+              padding: 5px 0 0 20px;
+              border-left: 2px solid $gray;
+            }
+            .views-field-created-1 {
+              margin: 0 0 0 70px;
+              padding: 5px 0 0 20px;
+              border-left: 2px solid $gray;
+            }
+            .views-field-title {
+              margin-top: 20px;
+              font-size: 20px;
+            }
+            .views-field-body {
+              padding-bottom: 20px;
+              font-size: 10px;
+              line-height: 1.2;
+            }
+            .views-field-view-node {
+              span {
+                a {
+                  font-size: 12px;
+                  padding: 5px 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  @include main_way_to_block {
+    .block-views-blockblock-about-block-1 {
+      & div {
+        .view-id-block_about {
+          .view-content {
+            .views-row {
+              .views-field-title {
+                span {
+                  font-size: 21px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .block-views-blockblock-service-block-1 {
+      .view-id-block_service {
+        .view-content {
+          .views-row {
+            .views-field-field-image {
+              margin-bottom: 20px;
+            }
+            .views-field-title {
+              font-size: 16px;
+            }
+            .views-field-body {
+              div {
+                font-size: 12px;
+              }
+            }
+            .views-field-view-node {
+              margin-top: 25px;
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-projects-block-1 {
+      .view-id-block_projects {
+        .view-content {
+          .views-row {
+            .views-field-field-image {
+              margin-bottom: 20px;
+            }
+            .views-field-title {
+              font-size: 16px;
+            }
+            .views-field-field-type-project {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-our-team-block-1 {
+      margin-bottom: 50px;
+      .view-id-block_our_team {
+        .view-content {
+          .views-row {
+            .views-field-field-image {
+              img {
+                margin-bottom: 20px;
+              }
+            }
+            .views-field-title {
+              & span {
+                font-size: 17px;
+              }
+            }
+            .views-field-field-position {
+              div {
+                font-size: 14px;
+              }
+            }
+            .views-field-field-social {
+              div {
+                ul {
+                  margin-left: 10px;
+                }
+              }
+            }
+            .views-field-link-flag {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-news-block-1 {
+      .view-id-block_news {
+        .view-filters {
+          .views-exposed-form {
+            .form-type--textfield {
+              input {
+                width: 250px;
+              }
+            }
+          }
+        }
+        .view-content {
+          flex-direction: column;
+          align-items: center;
+          .views-row {
+            width: 100%;
+            &:not(:nth-child(1)) {
+              margin-top: 20px;
+            }
+            .views-field-field-image {
+              float: left;
+              margin-left: 0;
+            }
+            .views-field-field-author {
+              margin-left: 0;
+              padding-left: 0;
+              border-left:  none;
+            }
+            .views-field-field-theme-post {
+              margin: 0;
+              padding: 0;
+              border-left:  none;
+            }
+            .views-field-created-1 {
+              margin: 0;
+              padding: 0;
+              border-left:  none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  @include main_way_to_block {
+    .block-inline-blockbanner {
+      .field--type-text-with-summary {
+        left: 7%;
+      }
+      img {
+        object-position: -270px;
+      }
+    }
+    .block-views-blockblock-about-block-1 {
+      & div {
+        .view-id-block_about {
+          .view-content {
+            margin: 40px auto;
+          }
+        }
+      }
+    }
+    .block-views-blockblock-service-block-1 {
+      .view-id-block_service {
+        .view-content {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 30px;
+          .views-row {
+            .views-field-title {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-projects-block-1 {
+      .view-id-block_projects {
+        .view-content {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          .views-row {
+            max-width: 290px;
+          }
+        }
+        .pager {
+          padding-bottom: 50px;
+        }
+      }
+    }
+    .block-views-blockblock-our-team-block-1 {
+      margin-bottom: 70px;
+      h2 {
+        margin-top: 50px;
+      }
+      .view-id-block_our_team {
+        .view-content {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          .views-row {
+            .views-field-title {
+              & span {
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-news-block-1 {
+      .view-id-block_news {
+        .view-filters {
+          .views-exposed-form {
+            .form-type--textfield {
+              input {
+                width: 150px;
+              }
+            }
+          }
+        }
+        .view-content {
+          .views-row {
+            padding: 15px;
+            .views-field-created {
+              padding-right: 10px;
+            }
+            .views-field-field-image {
+              float: none;
+              margin-left: 70px;
+              padding-left: 15px;
+            }
+            .views-field-field-author {
+              margin-left: 70px;
+              padding-left: 15px;
+              border-left: 2px solid $gray;
+            }
+            .views-field-field-theme-post {
+              margin: 0 0 0 70px;
+              padding: 5px 0 0 15px;
+              border-left: 2px solid $gray;
+            }
+            .views-field-created-1 {
+              margin: 0 0 0 70px;
+              padding: 5px 0 0 15px;
+              border-left: 2px solid $gray;
+            }
+            .views-field-title {
+              padding-left: 15px;
+              span {
+                font-size: 18px;
+              }
+            }
+            .views-field-body {
+              padding-left: 15px;
+            }
+            .views-field-view-node {
+              span {
+                a {
+                  font-size: 12px;
+                  padding: 5px 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .block-views-blockblock-clients-block-1 {
+      .view-id-block_clients {
+        padding: 30px 0 60px 0;
+      }
+    }
+  }
+}

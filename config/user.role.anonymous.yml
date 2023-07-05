@@ -1,0 +1,29 @@
+uuid: 555126b5-0986-4cb5-a69f-041604a6abe3
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - contact
+    - flag
+    - media
+    - search
+    - search_api_page
+    - social_link_field
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'configure social link field'
+  - 'flag like'
+  - 'search content'
+  - 'unflag like'
+  - 'view media'
+  - 'view search api pages'

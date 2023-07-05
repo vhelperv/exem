@@ -1,0 +1,28 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+@import "../media-breakpoints.scss";
+
+@media (max-width: 1670px) {
+  footer {
+    .region-footer {
+      width: 80%;
+    }
+  }
+}
+
+@include mobile {
+  footer {
+    .region-footer {
+      flex-direction: column;
+      justify-content: center;
+      .block-system-branding-block {
+        margin-bottom: 20px;
+      }
+      .block-social-media-links-block {
+        ul {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
