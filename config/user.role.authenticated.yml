@@ -10,7 +10,6 @@ dependencies:
     - filter
     - flag
     - media
-    - search
     - search_api_page
     - social_link_field
     - system
@@ -27,7 +26,6 @@ permissions:
   - 'configure social link field'
   - 'flag like'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'unflag like'
   - 'use text format basic_html'

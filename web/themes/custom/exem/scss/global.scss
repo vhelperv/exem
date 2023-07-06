@@ -32,7 +32,7 @@ body {
       }
     }
   }
-  a:focus, input:focus {
+  a:focus, input:focus, textarea:focus {
     box-shadow: none !important;
   }
   header {
