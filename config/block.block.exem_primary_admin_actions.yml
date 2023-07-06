@@ -9,7 +9,7 @@ _core:
 id: exem_primary_admin_actions
 theme: exem
 region: highlighted
-weight: -3
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

@@ -672,6 +672,7 @@ display:
           query_tags: {  }
       relationships: {  }
       use_ajax: true
+      group_by: false
       header: {  }
       footer: {  }
       display_extenders: {  }

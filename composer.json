@@ -85,12 +85,14 @@
         "drupal/flag": "^4.0@beta",
         "drupal/gin": "^3.0@RC",
         "drupal/google_maps_services": "^1.0",
+        "drupal/jquery_ui": "^1.6",
         "drupal/jquery_ui_draggable": "^2.0",
         "drupal/jquery_ui_droppable": "^2.0",
         "drupal/layout_builder_modal": "^1.2",
         "drupal/menu_item_extras": "^3.0",
         "drupal/menu_item_role_access": "^2.1",
         "drupal/menu_trail_by_path": "^2.0",
+        "drupal/panels": "^4.0@dev",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
         "drupal/search_api": "^1.29",
@@ -183,6 +185,11 @@
             "drupal/slick" : {
                 "Support for Slick" : "https://www.drupal.org/files/issues/2020-07-02/3123787-14.patch"
             }
+        },
+        "merge-plugin": {
+            "include": [
+                "web/modules/contrib/webform/composer.libraries.json"
+            ]
         }
     }
 }

@@ -36,6 +36,7 @@ elements: |-
       '#required': true
       '#required_error': 'PLEASE FILL DATA'
       '#international': true
+      '#international_initial_country': UA
     your_message:
       '#type': textarea
       '#title': Message
