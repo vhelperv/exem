@@ -55,3 +55,4 @@ cloneable_entities:
   - search_api_page
   - fixed_block_content
   - menu_position_rule
+  - redirect
